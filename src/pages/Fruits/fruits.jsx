@@ -3,6 +3,7 @@ import { InputFruit } from "../../components/InputFruit/inputFruit";
 import { ListFruits } from "../../components/ListFruits/listFruits";
 import { Out } from "../../components/Out/out";
 import { Inp } from "../../components/Inp/Inp";
+import { Totals } from "../../components/Totals/totals";
 
 export const Fruits = () => {
   const [transactions, setTransactions] = useState([
@@ -15,6 +16,7 @@ export const Fruits = () => {
   return (
     <>
       <h1>Frutas</h1>
+      <Totals transactions={transactions} />
       <InputFruit
         setTransactions={setTransactions}
         transactions={transactions}
